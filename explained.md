@@ -11,3 +11,7 @@ Core Concepts :
 
 - Coroutines : functions defined with async def that can pause themselves with await while waiting on something, like reading from a socket
 
+1 task per connection: every time a client connects, asyncio spawns a new task that runs the coroutines 
+( there is one live handle_client coroutine per connected client)
+
+Hence 1 server serves many clients concurrently. 

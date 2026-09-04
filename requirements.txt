@@ -1,2 +1,2 @@
-# No external dependencies yet — server.py uses only the standard library
-# (asyncio, logging). Add packages here when real URL fetching lands.
+aiohttp
+beautifulsoup4
